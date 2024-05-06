@@ -52,12 +52,23 @@ int main5(){
     return 0;
 }
 
+int main6(){
+    int x = 4;
+    int y = 32;
+    int c;
+    c = -x-- * ++y - x + y;
+    printf("\nmain6\n");
+    printf("%7.5d\n", c);
+    return 0;
+}
+
 int main(){
     main1();
     main2();
     main3();
     main4();
     main5();
+    main6();
     return 0;
 
 }
