@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SIZE 10
+#define SIZE 2
 
 void main_code(const int (*matrix_A)[SIZE],const int (*matrix_B)[SIZE],int rows){
     float sum_B=0;

@@ -104,7 +104,7 @@ def draw_graph():
     
     G=nx.Graph()
 
-    name_of_txt="two_var_txt/list_of_edges132.txt"
+    name_of_txt="two_var_txt/list_of_edges12.txt"
 
     string=read_txt(name_of_txt)
 
