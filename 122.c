@@ -2,7 +2,7 @@
 
 int main(){
 
-    float a=1, b=5, c=6.25, d, v,vn,x1=0,x2;
+    float a=1, b=3, c=2.25, d, v,vn,x1=0,x2;
     int flag=1,count;
     printf("Enter the coefficients of the quadratic equation\n");
     printf("Input format: a;b;c\n");
@@ -36,7 +36,7 @@ int main(){
     if (count=1){
         if (v<0){
             while (v<0){
-                x1++;
+                x1+=1;
                 vn=a*x1*x1+b*x1+c;
                 // if (v>vn){
                 //     x1=0;
@@ -54,7 +54,7 @@ int main(){
 
         if (v>0){
             while (v>0){
-                x1++;
+                x1+=1;
                 vn=a*x1*x1+b*x1+c;
                 // printf("%f %f ",v,vn);
                 if (vn>v){
@@ -71,10 +71,12 @@ int main(){
                 while (v>0){
                     x1-=1;
                     v=a*x1*x1+b*x1+c;
+                    printf("%f\n",v);
                 }
             }
         }
     }
+    printf("%f %f %f\n",a,b,c);
     printf("%f %f %f",x1,d,v);
     return 0;
 }
